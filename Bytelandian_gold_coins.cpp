@@ -12,7 +12,6 @@ ll b_g_c(ll n)
     if(dp[n]!=0)
     return dp[n];
     ll x=b_g_c(n/2)+b_g_c(n/3)+b_g_c(n/4);
-
     if(x>n)
     dp[n]=x;
     else
